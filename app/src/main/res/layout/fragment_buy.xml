@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header"
+        app:elevation="0dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/afri_gold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUY BOOKS"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Search field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_search"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/search_by_title"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/afri_gold"
+                app:hintTextColor="@color/afri_earth"
+                app:boxCornerRadiusTopStart="28dp"
+                app:boxCornerRadiusTopEnd="28dp"
+                app:boxCornerRadiusBottomStart="28dp"
+                app:boxCornerRadiusBottomEnd="28dp"
+                app:startIconDrawable="@drawable/ic_search"
+                app:startIconTint="@color/afri_terracotta">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch"
+                    android:maxLines="1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- Filters label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filters"
+            style="@style/TextAppearance.AfriBooks.SectionHeader"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="8dp"/>
+
+        <!-- Filter chips -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_filters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="false">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_all"
+                    style="@style/Widget.AfriBooks.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:checked="true"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_like_new"
+                    style="@style/Widget.AfriBooks.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Like New"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_good"
+                    style="@style/Widget.AfriBooks.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_fair"
+                    style="@style/Widget.AfriBooks.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fair"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_poor"
+                    style="@style/Widget.AfriBooks.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poor"/>
+
+            </com.google.android.material.chip.ChipGroup>
+        </HorizontalScrollView>
+
+        <!-- Available books label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/available_books"
+            style="@style/TextAppearance.AfriBooks.SectionHeader"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="8dp"/>
+
+        <!-- Books RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_books"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="16dp"
+            android:clipToPadding="false"/>
+
+        <!-- Empty state -->
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_results"
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:padding="40dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

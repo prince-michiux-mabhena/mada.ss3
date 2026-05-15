@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- African-inspired primary palette -->
+    <color name="afri_terracotta">#C0572B</color>
+    <color name="afri_terracotta_dark">#8B3A1A</color>
+    <color name="afri_terracotta_light">#E8855A</color>
+
+    <color name="afri_gold">#D4A017</color>
+    <color name="afri_gold_light">#F0C84A</color>
+
+    <color name="afri_earth">#5C3D1E</color>
+    <color name="afri_earth_light">#8B6240</color>
+
+    <color name="afri_savanna">#F5ECD7</color>
+    <color name="afri_savanna_dark">#E8D9B8</color>
+
+    <color name="afri_green">#2E7D32</color>
+    <color name="afri_green_light">#4CAF50</color>
+
+    <!-- Neutral -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#5C5C5C</color>
+    <color name="text_hint">#9E9E9E</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="background">#FAFAFA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#B00020</color>
+
+    <!-- Condition badge colors -->
+    <color name="condition_like_new">#1B5E20</color>
+    <color name="condition_good">#2E7D32</color>
+    <color name="condition_fair">#F57F17</color>
+    <color name="condition_poor">#B71C1C</color>
+
+    <!-- Primary / theme aliases -->
+    <color name="colorPrimary">@color/afri_terracotta</color>
+    <color name="colorPrimaryDark">@color/afri_terracotta_dark</color>
+    <color name="colorAccent">@color/afri_gold</color>
+    <color name="colorOnPrimary">@color/white</color>
+    <color name="colorSecondary">@color/afri_gold</color>
+    <color name="colorOnSecondary">@color/afri_earth</color>
+</resources>

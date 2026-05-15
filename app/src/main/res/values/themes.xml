@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.AfriBooks" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/afri_terracotta</item>
+        <item name="colorPrimaryVariant">@color/afri_terracotta_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/afri_gold</item>
+        <item name="colorSecondaryVariant">@color/afri_gold_light</item>
+        <item name="colorOnSecondary">@color/afri_earth</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorError">@color/error</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@color/afri_terracotta_dark</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="materialButtonStyle">@style/Widget.AfriBooks.Button</item>
+        <item name="textInputStyle">@style/Widget.AfriBooks.TextInputLayout</item>
+        <item name="bottomNavigationStyle">@style/Widget.AfriBooks.BottomNavigation</item>
+    </style>
+
+    <style name="Theme.AfriBooks.Splash" parent="Theme.AfriBooks">
+        <item name="android:statusBarColor">@color/afri_terracotta</item>
+        <item name="android:windowBackground">@color/afri_terracotta</item>
+    </style>
+
+    <style name="Theme.AfriBooks.NoActionBar" parent="Theme.AfriBooks">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Button styles -->
+    <style name="Widget.AfriBooks.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/afri_terracotta</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Widget.AfriBooks.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/afri_terracotta</item>
+        <item name="android:textColor">@color/afri_terracotta</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Widget.AfriBooks.Button.Secondary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/afri_earth</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+    </style>
+
+    <!-- TextInputLayout -->
+    <style name="Widget.AfriBooks.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/afri_terracotta</item>
+        <item name="hintTextColor">@color/afri_terracotta</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+    </style>
+
+    <!-- BottomNavigation -->
+    <style name="Widget.AfriBooks.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_color</item>
+        <item name="itemTextColor">@color/bottom_nav_color</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="Widget.AfriBooks.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@color/afri_terracotta</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/afri_savanna</item>
+    </style>
+
+    <!-- Text styles -->
+    <style name="TextAppearance.AfriBooks.Headline" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@color/afri_earth</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.AfriBooks.Title" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.AfriBooks.Body" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.AfriBooks.Price" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/afri_terracotta</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.AfriBooks.Badge" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Card style -->
+    <style name="Widget.AfriBooks.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">3dp</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="contentPadding">0dp</item>
+    </style>
+
+    <!-- Section header -->
+    <style name="TextAppearance.AfriBooks.SectionHeader" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:textColor">@color/afri_terracotta</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Filter chip -->
+    <style name="Widget.AfriBooks.Chip" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipStrokeColor">@color/afri_terracotta</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="chipCornerRadius">20dp</item>
+    </style>
+
+</resources>

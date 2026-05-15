@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AfriBooks</string>
+    <string name="app_tagline">Student Textbook Marketplace</string>
+
+    <!-- Auth -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="username">Username</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="no_account">Don\'t have an account? Register</string>
+    <string name="have_account">Already have an account? Login</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="create_account">Create Account</string>
+
+    <!-- Home -->
+    <string name="home">Home</string>
+    <string name="search_hint">Search books…</string>
+    <string name="buy_books">Buy Books</string>
+    <string name="sell_book">Sell Book</string>
+    <string name="recent_listings">Recent Listings</string>
+    <string name="see_all">See All</string>
+    <string name="funda_africa">FUNDA AFRICA</string>
+
+    <!-- Buy -->
+    <string name="available_books">Available Books</string>
+    <string name="filters">Filters</string>
+    <string name="filter_course">Course</string>
+    <string name="filter_price">Price</string>
+    <string name="filter_condition">Condition</string>
+    <string name="search_by_title">Search by title or course…</string>
+    <string name="no_results">No books found</string>
+
+    <!-- Sell -->
+    <string name="sell_a_book">Sell a Book</string>
+    <string name="book_title">Book Title</string>
+    <string name="course_name">Course Name</string>
+    <string name="price">Price</string>
+    <string name="condition">Condition</string>
+    <string name="book_image">Book Image</string>
+    <string name="description">Description</string>
+    <string name="submit_listing">Submit Listing</string>
+    <string name="enter_book_title">Enter book title</string>
+    <string name="enter_course">Enter course code/name</string>
+    <string name="enter_price">R 0.00</string>
+    <string name="select_condition">Select condition</string>
+    <string name="add_image">Add Image</string>
+    <string name="like_new">Like New</string>
+    <string name="good">Good</string>
+    <string name="fair">Fair</string>
+    <string name="poor">Poor</string>
+
+    <!-- Profile -->
+    <string name="profile">Profile</string>
+    <string name="my_listings">My Listings</string>
+    <string name="messages">Messages</string>
+    <string name="saved_books">Saved Books</string>
+    <string name="settings">Settings</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="logout">Log Out</string>
+
+    <!-- Detail -->
+    <string name="book_details">Book Details</string>
+    <string name="contact_seller">Contact Seller</string>
+    <string name="save_book">Save Book</string>
+    <string name="course_label">Course</string>
+    <string name="seller_label">Seller</string>
+    <string name="condition_label">Condition</string>
+    <string name="price_label">Price</string>
+
+    <!-- Enquiry -->
+    <string name="enquiry_title">Send Enquiry</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_email">Your Email</string>
+    <string name="your_message">Your Message</string>
+    <string name="send_enquiry">Send Enquiry</string>
+    <string name="enquiry_sent">Enquiry sent successfully!</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_buy">Buy</string>
+    <string name="nav_sell">Sell</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Validation -->
+    <string name="field_required">This field is required</string>
+    <string name="invalid_email">Please enter a valid email</string>
+    <string name="password_too_short">Password must be at least 6 characters</string>
+    <string name="passwords_no_match">Passwords do not match</string>
+    <string name="price_invalid">Please enter a valid price</string>
+    <string name="listing_submitted">Listing submitted successfully!</string>
+    <string name="login_success">Welcome back!</string>
+    <string name="register_success">Account created successfully!</string>
+    <string name="book_saved">Book saved!</string>
+    <string name="book_unsaved">Book removed from saved</string>
+</resources>
